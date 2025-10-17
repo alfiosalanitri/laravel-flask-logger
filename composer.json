@@ -9,8 +9,8 @@
         }
     ],
     "require": {
-        "php": "^8.1",
-        "illuminate/support": "^10.0|^11.0",
+        "php": "^8.3",
+        "illuminate/support": "^10.0|^11.0|^12.0",
         "monolog/monolog": "^3.0"
     },
     "autoload": {
@@ -24,6 +24,14 @@
                 "AlfioSalanitri\\FlaskLogger\\FlaskLoggerServiceProvider"
             ]
         }
+    },
+    "homepage": "https://github.com/alfiosalanitri/laravel-flask-logger",
+    "support": {
+      "issues": "https://github.com/alfiosalanitri/laravel-flask-logger/issues",
+      "source": "https://github.com/alfiosalanitri/laravel-flask-logger",
+      "dependencies": {
+        "flask-log-monitor": "https://github.com/alfiosalanitri/flask-log-monitor"
+      }
     },
     "minimum-stability": "stable",
     "prefer-stable": true

@@ -40,7 +40,7 @@ Make sure your Flask Log Monitor server is running and reachable at the URL defi
 Send logs to your Flask server using the `flask` channel:
 
 ```php
-Log::channel('flask')->info('Test log sent to Flask!');
+Log::channel('flask')->info('Test log sent to Flask!', ['foo'=>'bar']);
 ```
 
 If the Flask server is unavailable, logs will automatically fall back to the local `daily` channel.

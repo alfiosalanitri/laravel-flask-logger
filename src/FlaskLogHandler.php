@@ -62,6 +62,7 @@ class FlaskLogHandler extends AbstractProcessingHandler
                 ->post($this->url, [
                     'level' => $record['level_name'],
                     'message' => $record['message'],
+                    'context' => isset($record['context']) ? $record['context'] : [],
                 ]);
         } catch (\Throwable $e) {
             // If sending to Flask fails, log the error locally to avoid breaking the app.
